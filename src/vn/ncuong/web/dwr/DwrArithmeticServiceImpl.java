@@ -1,9 +1,9 @@
-package vn.ncuong.service;
+package vn.ncuong.web.dwr;
 
 import org.directwebremoting.annotations.RemoteMethod;
-import org.springframework.stereotype.Service;
-@Service
-public class DwrArithmeticServiceImpl implements DwrArithmeticService{
+import org.directwebremoting.annotations.RemoteProxy;
+@RemoteProxy
+public class DwrArithmeticServiceImpl implements DwrArithmeticService {
 
 	@Override
 	@RemoteMethod

@@ -2,7 +2,11 @@
 <!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
                                          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
- <session-factory name="">
-
+ <session-factory name="sessionFactory">
+  <mapping class="vn.ncuong.db.entity.User"/>
+  <mapping class="vn.ncuong.db.entity.Role"/>
+  <mapping class="vn.ncuong.db.entity.Permission"/>
+  <mapping class="vn.ncuong.db.entity.UserRole"/>
+  <mapping class="vn.ncuong.db.entity.RolePermission"/>
  </session-factory>
 </hibernate-configuration>

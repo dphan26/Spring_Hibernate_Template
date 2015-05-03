@@ -11,10 +11,8 @@
 	<context:annotation-config />
 	<dwr:annotation-config />
 	<dwr:url-mapping />
-	<dwr:annotation-scan base-package="com.training.web.dwr"
-		scanDataTransferObject="true" scanRemoteProxy="true" />
+	<dwr:annotation-scan base-package="vn.ncuong.web.dwr" scanDataTransferObject="true" scanRemoteProxy="true"/>
 	<dwr:controller id="dwrController" debug="true" />
-	<dwr:configuration />
 
 
 	<bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
