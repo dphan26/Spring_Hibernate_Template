@@ -17,15 +17,19 @@ public class TestUserDAO {
 		String[] configFile = new String[]{"/Site/WEB-INF/context/web-context.xml","/Site/WEB-INF/context/view-context.xml","/Site/WEB-INF/context/datasource-transaction-context.xml","/Site/WEB-INF/context/security-context.xml"};
 		ApplicationContext context = new FileSystemXmlApplicationContext(configFile);
 		UserDAO userDAO = (UserDAO) context.getBean("userDAOImpl");
-		List<User> users = userDAO.getAllUser();
-		for (User user : users) {
-			System.out.println(user.getId());
-			System.out.println(user.getUserName());
-			System.out.println(user.getFirstName() + " " + user.getLastName());
-			System.out.println(user.getPassWord());
-			System.out.println("----------------------------");
-		}
+//		List<User> users = userDAO.getAllUser();
+//		for (User user : users) {
+//			System.out.println(user.getId());
+//			System.out.println(user.getUsername());
+//			System.out.println(user.getFirstName() + " " + user.getLastName());
+//			System.out.println(user.getPassword());
+//			System.out.println("----------------------------");
+//		}
 		
+		
+		User user = userDAO.findByUsername("cuongn");
+		System.out.println(user.getLastName());
+		System.out.println(user.getRole().getRoleName());
 		System.exit(0);
 	}
 }
