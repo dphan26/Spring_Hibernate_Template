@@ -1,1 +1,1 @@
-<p>&copy; zMedia - 2015 - User Site</p>
+<p>CuongNguyen - 2015</p>

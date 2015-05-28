@@ -7,9 +7,16 @@
         <pattern>/*</pattern>
     </decorator>
     <decorator name="admin" page="admin.jsp">
-        <pattern>/admin/*</pattern>
+        <pattern>
+        	/admin/*
+        </pattern>
     </decorator>
     <decorator name="site" page="site.jsp">
         <pattern>/site/*</pattern>
+    </decorator>
+    <decorator name="user" page="user.jsp">
+        <pattern>
+        	/user/*
+        </pattern>
     </decorator>
 </decorators>

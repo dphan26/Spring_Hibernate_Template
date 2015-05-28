@@ -9,7 +9,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Test Ajax</title>
-
+<script type='text/javascript' src='${contextPath}/dwr/engine.js'></script>
+<script type='text/javascript' src='${contextPath}/dwr/util.js'></script>
+<script type="text/javascript" src="${contextPath}/dwr/interface/DwrArithmeticServiceImpl.js"></script>
 </head>
 <body>
 	<h1>Demo Ajax</h1>
@@ -26,7 +28,7 @@
 		var num2 = dwr.util.getValue("num2");
 		
 		// Pass two numbers, a callback function, and error function
-		dwrService.add(num1, num2, {
+		DwrArithmeticServiceImpl.add(num1, num2, {
 			callback : handleAddSuccess,
 			errorHandler : handleAddError
 		});

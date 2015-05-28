@@ -1,5 +1,4 @@
-<div class="row">
-    <ul id="menu">
+<ul id="menu">
     <li><a href="#">Home</a></li>
     <li>
         <a href="#">Categories</a>
@@ -30,7 +29,7 @@
     <li><a href="#">About</a></li>
     <li><a href="#">Contact</a></li>
 </ul>
-</div>
+<hr>
 <script type="text/javascript">
     $(function() {
 		if ($.browser.msie && $.browser.version.substr(0,1)<7)

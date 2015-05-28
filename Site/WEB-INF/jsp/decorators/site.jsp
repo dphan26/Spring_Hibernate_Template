@@ -9,7 +9,7 @@
 <meta name="author" content="">
 <title><decorator:title /></title>
 <core:set var="contextPath" value="${pageContext.request.contextPath}" />
-<link href="${contextPath}/css/style.css" rel="stylesheet"
+<link href="${contextPath}/css/site/style.css" rel="stylesheet"
 	type="text/css" />
 <link href="${contextPath}/css/bootstrap.min.css" rel="stylesheet"
 	type="text/css" />
@@ -29,7 +29,10 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-12">
+			<div class="col-lg-3">
+				<%@ include file="/WEB-INF/jsp/include/site/sidebar.jsp"%>
+			</div>
+			<div class="col-lg-9">
 				<decorator:body />
 			</div>
 		</div>
