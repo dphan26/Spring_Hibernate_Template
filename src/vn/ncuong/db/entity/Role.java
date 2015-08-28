@@ -11,12 +11,12 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="roles")
+@Table(name="role")
 public class Role {
 	@Id
 	@GeneratedValue
-	@Column(name = "ID")
-	private Integer id;
+	@Column(name = "ROLE_ID")
+	private Integer roleId;
 	
 	@Column(name="ROLE_NAME")
 	private String roleName;
@@ -32,12 +32,12 @@ public class Role {
 		this.users = users;
 	}
 
-	public Integer getId() {
-		return id;
+	public Integer getRoleId() {
+		return roleId;
 	}
 
-	public void setId(Integer id) {
-		this.id = id;
+	public void setRoleId(Integer roleId) {
+		this.roleId = roleId;
 	}
 
 	public String getRoleName() {

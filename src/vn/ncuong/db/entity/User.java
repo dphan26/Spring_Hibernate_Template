@@ -12,17 +12,20 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "users")
+@Table(name = "user")
 public class User {
 	
 	@Id
 	@GeneratedValue
-	@Column(name = "ID")
-	private Integer id;
+	@Column(name = "USER_ID")
+	private Integer userId;
 	
 	@Column(name="USERNAME")
 	private String username;
 	
+	@Column(name="EMAIL")
+	private String email;
+
 	@Column(name="PASSWORD")
 	private String password;
 	
@@ -42,7 +45,7 @@ public class User {
 	private Timestamp dateModified;
 
 	@ManyToOne(fetch=FetchType.LAZY)
-	@JoinColumn(name="ROLE_ID", referencedColumnName="ID")
+	@JoinColumn(name="ROLE_ID", referencedColumnName="ROLE_ID")
 	private Role role;
 
 	public Role getRole() {
@@ -53,12 +56,12 @@ public class User {
 		this.role = role;
 	}
 
-	public Integer getId() {
-		return id;
+	public Integer getUserId() {
+		return userId;
 	}
 
-	public void setId(Integer id) {
-		this.id = id;
+	public void setUserId(Integer userId) {
+		this.userId = userId;
 	}
 
 	public String getUsername() {
@@ -67,6 +70,14 @@ public class User {
 
 	public void setUsername(String username) {
 		this.username = username;
+	}
+	
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public String getPassword() {
