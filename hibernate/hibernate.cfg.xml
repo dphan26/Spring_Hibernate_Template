@@ -8,5 +8,6 @@
   <mapping class="vn.ncuong.db.entity.Test"/>
   <mapping class="vn.ncuong.db.entity.Category"/>
   <mapping class="vn.ncuong.db.entity.Post"/>
+  <mapping class="vn.ncuong.db.entity.Notebook"/>
  </session-factory>
 </hibernate-configuration>
