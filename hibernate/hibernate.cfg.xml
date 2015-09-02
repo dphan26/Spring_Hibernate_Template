@@ -6,5 +6,7 @@
   <mapping class="vn.ncuong.db.entity.User"/>
   <mapping class="vn.ncuong.db.entity.Role"/>
   <mapping class="vn.ncuong.db.entity.Test"/>
+  <mapping class="vn.ncuong.db.entity.Category"/>
+  <mapping class="vn.ncuong.db.entity.Post"/>
  </session-factory>
 </hibernate-configuration>

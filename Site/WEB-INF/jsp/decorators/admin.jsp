@@ -1,4 +1,4 @@
-<%@ include file="/WEB-INF/jsp/include/admin/taglibs_include.jsp"%>
+<%@ include file="/WEB-INF/jsp/include/taglibs_include.jsp"%>
 <core:set var="contextPath" value="${pageContext.request.contextPath}" />
 <!DOCTYPE html>
 <html>

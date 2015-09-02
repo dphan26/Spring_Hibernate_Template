@@ -1,4 +1,4 @@
-<%@ include file="/WEB-INF/jsp/include/site/taglibs_include.jsp"%>
+<%@ include file="/WEB-INF/jsp/include/taglibs_include.jsp"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +13,8 @@
 	type="text/css" />
 <link href="${contextPath}/css/bootstrap.min.css" rel="stylesheet"
 	type="text/css" />
+	<script src="${contextPath}/js/jquery-1.11.3.min.js"></script>
+	<script src="${contextPath}/js/bootstrap.min.js"></script>
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -46,11 +48,6 @@
 	</div>
 
 	<!-- /.container -->
-
-	<!-- jQuery Version 1.11.1 -->
-	<script src="${contextPath}/js/jquery.js"></script>
-
-	<!-- Bootstrap Core JavaScript -->
-	<script src="${contextPath}/js/bootstrap.min.js"></script>
+	
 </body>
 </html>

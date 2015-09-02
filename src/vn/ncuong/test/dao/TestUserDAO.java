@@ -1,7 +1,5 @@
 package vn.ncuong.test.dao;
 
-import java.util.List;
-
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 

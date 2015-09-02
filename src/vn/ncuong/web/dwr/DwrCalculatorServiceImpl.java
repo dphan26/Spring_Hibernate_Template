@@ -3,7 +3,7 @@ package vn.ncuong.web.dwr;
 import org.directwebremoting.annotations.RemoteMethod;
 import org.directwebremoting.annotations.RemoteProxy;
 @RemoteProxy
-public class DwrArithmeticServiceImpl implements DwrArithmeticService {
+public class DwrCalculatorServiceImpl implements DwrCalculatorService {
 
 	@Override
 	@RemoteMethod

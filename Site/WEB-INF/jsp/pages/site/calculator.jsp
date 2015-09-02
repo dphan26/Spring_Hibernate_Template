@@ -1,8 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
-<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
-<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="core"%>
+<%@ include file="/WEB-INF/jsp/include/taglibs_include.jsp"%>
 <core:set var="contextPath" value="${pageContext.request.contextPath}" />    
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -11,7 +7,7 @@
 <title>Test Ajax</title>
 <script type='text/javascript' src='${contextPath}/dwr/engine.js'></script>
 <script type='text/javascript' src='${contextPath}/dwr/util.js'></script>
-<script type="text/javascript" src="${contextPath}/dwr/interface/DwrArithmeticServiceImpl.js"></script>
+<script type="text/javascript" src="${contextPath}/dwr/interface/DwrCalculatorServiceImpl.js"></script>
 </head>
 <body>
 	<h1>Demo Ajax</h1>
@@ -28,7 +24,7 @@
 		var num2 = dwr.util.getValue("num2");
 		
 		// Pass two numbers, a callback function, and error function
-		DwrArithmeticServiceImpl.add(num1, num2, {
+		DwrCalculatorServiceImpl.add(num1, num2, {
 			callback : handleAddSuccess,
 			errorHandler : handleAddError
 		});

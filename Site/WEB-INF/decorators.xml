@@ -3,8 +3,8 @@
     	<pattern>**ajax=true</pattern>
         <pattern>/js/*</pattern>
     </excludes>
-    <decorator name="default" page="site.jsp">
-        <pattern>/*</pattern>
+    <decorator name="default" page="default.jsp">
+        <pattern>/dwr/*</pattern>
     </decorator>
     <decorator name="admin" page="admin.jsp">
         <pattern>
@@ -12,7 +12,9 @@
         </pattern>
     </decorator>
     <decorator name="site" page="site.jsp">
-        <pattern>/site/*</pattern>
+        <pattern>
+        	/site/*
+        </pattern>
     </decorator>
     <decorator name="user" page="user.jsp">
         <pattern>

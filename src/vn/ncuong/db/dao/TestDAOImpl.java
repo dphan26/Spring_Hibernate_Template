@@ -11,7 +11,7 @@ import vn.ncuong.db.entity.Test;
 
 
 @Repository
-public class TestDAOImpl implements TestDAO{
+public class TestDAOImpl extends BaseDAOImpl<Integer, Test> implements TestDAO{
 
 	@Autowired
 	private SessionFactory sessionFactory;

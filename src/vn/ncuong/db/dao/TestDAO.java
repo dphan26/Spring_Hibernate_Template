@@ -6,6 +6,6 @@ import vn.ncuong.db.entity.Test;
 
 
 
-public interface TestDAO {
+public interface TestDAO extends BaseDAO<Integer, Test> {
 	public List<Test> getAllTest();
 }
