@@ -11,8 +11,10 @@
 <script type='text/javascript' src='${contextPath}/js/post/post.js'></script>
 </head>
 <body>
-<ol id="results">
-</ol>
-<div class="animation_image" style="display:none" align="center"><img src="${pageContext.request.contextPath}/img/site/loadmore/ajax-loader.gif"></div>
+	<ol id="results">
+	</ol>
+	<div class="animation_image" style="display: none" align="center">
+		<img src="${pageContext.request.contextPath}/img/site/loadmore/ajax-loader.gif">
+	</div>
 </body>
 </html>

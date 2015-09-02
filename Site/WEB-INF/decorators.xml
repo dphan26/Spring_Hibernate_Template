@@ -2,10 +2,12 @@
     <excludes>
     	<pattern>**ajax=true</pattern>
         <pattern>/js/*</pattern>
-    </excludes>
-    <decorator name="default" page="default.jsp">
         <pattern>/dwr/*</pattern>
-    </decorator>
+        <pattern>/dwr/index.html</pattern>
+    </excludes>
+<!--     <decorator name="default" page="default.jsp"> -->
+<!--         <pattern>/dwr/*</pattern> -->
+<!--     </decorator> -->
     <decorator name="admin" page="admin.jsp">
         <pattern>
         	/admin/*

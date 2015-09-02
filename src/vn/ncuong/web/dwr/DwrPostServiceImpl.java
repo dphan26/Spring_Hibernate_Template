@@ -21,7 +21,7 @@ public class DwrPostServiceImpl implements DwrPostService {
 	@Override
 	@RemoteMethod
 	public List<PostBean> getPostsInGroup(int position, int numberOfPostInGroup) {
-		List<Post> posts = postDAO.findLimitPostWithOrderById(position, numberOfPostInGroup);
+		List<Post> posts = postDAO.findLimitPostOrderById(position, numberOfPostInGroup);
 		List<PostBean> postBeans = new ArrayList<PostBean>();
 		for (Post post : posts) {
 			PostBean postBean = new PostBean();

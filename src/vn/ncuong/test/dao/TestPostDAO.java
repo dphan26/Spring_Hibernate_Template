@@ -25,7 +25,7 @@ public class TestPostDAO {
 		
 		
 		System.out.println("========================================");
-		List<Post> post3 = postDAO.findLimitPostWithOrderById(0, 5);
+		List<Post> post3 = postDAO.findLimitPostOrderById(0, 5);
 		for (Post post : post3) {
 			System.out.println(post.getPostId());
 			System.out.println(post.getPostTitle());

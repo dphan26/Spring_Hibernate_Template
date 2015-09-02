@@ -16,9 +16,13 @@
 		eternal="true"
 		overflowToDisk="false"/>
 	<cache name="PostDAOImpl.findAllPostWithCache.cache"
-	maxElementsInMemory="500" 
-	eternal="true"
-	overflowToDisk="false"/>
+		maxElementsInMemory="500" 
+		eternal="true"
+		overflowToDisk="false"/>
+	<cache name="PostDAOImpl.findLimitPostOrderByIdWithCache.cache"
+		maxElementsInMemory="500" 
+		eternal="true"
+		overflowToDisk="false"/>	
 		
 	<cache name="MailUtil.getMailSender.cache"
 		maxElementsInMemory="5" 

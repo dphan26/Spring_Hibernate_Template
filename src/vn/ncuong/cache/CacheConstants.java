@@ -18,6 +18,7 @@ public interface CacheConstants {
 	
 	public interface PostDAO {
 		public final static String FIND_ALL_POST = "PostDAOImpl.findAllPostWithCache.cache";
+		public final static String FIND_LIMIT_POST_ORDER_BY_ID_WITHCACHE = "PostDAOImpl.findLimitPostOrderByIdWithCache.cache";
 	}
 	public interface MailUtil {
 		public final static String GET_MAIL_SENDER_CACHE = "MailUtil.getMailSender.cache";
