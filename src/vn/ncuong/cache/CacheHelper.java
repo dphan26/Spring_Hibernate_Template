@@ -26,11 +26,6 @@ import org.springframework.util.Assert;
 import vn.ncuong.util.Lib;
 import vn.ncuong.web.debug.DebugConstants;
 
-/**
- * @Description: This class contains helper methods to Ehcache CacheManager.
- * @author Max
- * @version 1.0
- */
 public class CacheHelper implements InitializingBean{
 	public static final String CACHE_CFG_FILE = "web-ehcache.xml";
 	private static final String CACHE_REQUEST = "siteCache";
